@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(37, 26, 22),
+    rgb(59, 45, 34),
+    rgb(176, 132, 85),
+    rgb(168, 147, 100),
+    rgb(82, 97, 74),
+    rgb(58, 75, 65)
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-position: center center;
+  position: relative;
+}
+
+.card-img-left {
+  width: 100%;
+  /* Link to your background image using in the property below! */
+  background: scroll center url("../Immagini/checkmate.png");
+  background-size: cover;
+}
+
+.container {
+  padding: 0%;
+}

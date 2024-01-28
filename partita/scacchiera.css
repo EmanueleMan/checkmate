@@ -1,0 +1,133 @@
+#dettagli {
+  border-radius: 4%;
+  height: 300px;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#cronologia-mosse {
+  overflow-y: scroll;
+  grid-template-columns: 3;
+  height: 600px;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+#cronologia-mosse::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4%;
+  border-color: aliceblue;
+}
+
+#cronologia-mosse::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f6b;
+  border-radius: 4%;
+}
+
+#cronologia-mosse::-webkit-scrollbar-button {
+  display: none;
+  background-color: rgba(186, 215, 193, 0.184);
+}
+
+.mossa {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.pezzo-nero {
+  width: 90px;
+}
+.pezzo-bianco {
+  width: 90px;
+}
+
+.possibile-mossa {
+  position: relative;
+  top: 22px;
+  left: 22px;
+}
+.mangio-pezzo {
+  position: absolute;
+  top: 22px;
+  left: 22px;
+}
+.cella-neutra {
+  background-color: rgb(143, 108, 52);
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.cella-colorata {
+  background-color: rgb(247, 243, 179);
+
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.pagina {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+.pagina > div:nth-child(1) {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.pagina > div:nth-child(2) {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.pagina > div:nth-child(3) {
+  flex-grow: 2;
+  flex-shrink: 2;
+}
+.scacchiera {
+  background-color: whitesmoke;
+  display: grid;
+  grid-template-rows: repeat(8, 90px);
+  grid-template-columns: repeat(8, 90px);
+  border: solid;
+  border-width: 30px;
+  border-color: rgb(82, 61, 29);
+}
+#a8 > img {
+  text-align: center;
+}
+
+.container-mangiati {
+  width: 30%;
+}
+
+.card-b {
+  min-height: 300px;
+}
+
+.card-p {
+  min-width: 20%;
+}
+
+.card-c {
+  min-width: 20%;
+}
+
+.card-h {
+  min-width: 20%;
+  height: 700px;
+}
+
+.container-s {
+  width: 50%;
+}
+
+.sp-around {
+  justify-content: space-evenly;
+}
+.d-flexd {
+  display: flex;
+}
+
+.d-flexs {
+  display: flex;
+}

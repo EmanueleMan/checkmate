@@ -1,0 +1,638 @@
+body {
+  background-image: url("../Immagini/SfondoPagina.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-position: center center;
+  position: relative;
+}
+
+a {
+  color: rgb(143, 108, 52);
+}
+
+a:hover {
+  color: rgb(200 0 0);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  text-align: center;
+  background-color: rgb(247, 243, 179);
+  margin: auto;
+  padding: 20px;
+  border: 21px solid rgb(143, 108, 52);
+  width: 60%;
+}
+
+.btn-join {
+  top: 50%;
+  background-color: rgb(74, 74, 74);
+  color: #ffffff;
+}
+
+.btn-modal {
+  width: 20%;
+}
+
+.card-c {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.card-b {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+.btn {
+  /* background-color: rgb(3, 171, 79); */
+  color: #fff !important;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+.error {
+  color: red;
+}
+
+.passwordReq {
+  color: black;
+  background-color: rgb(230, 230, 19);
+  padding: 12px;
+  font-size: 0.8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.tos-label {
+  color: red;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 70px);
+  overflow-y: scroll;
+  height: 210px;
+}
+.grid::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 4%;
+  border-color: aliceblue;
+}
+
+.grid::-webkit-scrollbar-thumb {
+  background-color: #0f0f0f6b;
+  border-radius: 4%;
+}
+
+.grid::-webkit-scrollbar-button {
+  display: none;
+  background-color: rgba(186, 215, 193, 0.184);
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.header-logged {
+  padding-top: 7rem;
+  height: 150px;
+  width: 100%;
+}
+
+.btn-game {
+  padding: 30px;
+  margin-top: 100px;
+  height: 100px;
+  width: 50%;
+  text-align: center;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1e130c 0%,
+    #9a8478 51%,
+    #1e130c 100%
+  );
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0);
+  display: block;
+  border: none !important;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #000000 !important;
+  text-decoration: none;
+}
+
+.btn-grad-2 {
+  background-image: linear-gradient(
+    to right,
+    #877257 0%,
+    #d39d38 51%,
+    #8f6503 100%
+  );
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0) !important;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.btn-grad-2:hover {
+  background-position: right center;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+}
+
+.btn-grad-3 {
+  background-image: linear-gradient(
+    to right,
+    #d39d38 0%,
+    #877257 51%,
+    #175226 100%
+  );
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0) !important;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.btn-grad-3:hover {
+  background-position: right center;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+}
+
+.btn-grad-4 {
+  background-image: linear-gradient(
+    to right,
+    #c21500 0%,
+    #d39d38 51%,
+    #c21500 100%
+  );
+  text-align: center;
+  font-weight: bold;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: rgb(0, 0, 0) !important;
+  border-radius: 10px;
+  border: none !important;
+}
+
+.btn-grad-4:hover {
+  background-position: right center;
+  color: rgb(0, 0, 0) !important;
+  text-decoration: none;
+}
+
+.btn-create {
+  margin-left: 10px;
+}
+
+.btn-back {
+  width: 15%;
+  height: 70px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.text-error-message {
+  text-align: center;
+  display: block;
+}
+
+.lead-col {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.container-log {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-create {
+  width: auto;
+  height: auto;
+
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card-create {
+  width: 40%;
+}
+
+.card-room {
+  width: 60%;
+}
+
+.d-flex-b {
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-match {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+}
+
+.reg-height {
+  height: 100%;
+}
+
+/* media queries */
+
+.d-grid-logged {
+  justify-items: center;
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.low-centered {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 1536px) {
+  .container-log {
+    max-width: 1280px;
+  }
+
+  .btn-game {
+    width: 70%;
+  }
+
+  .card-create {
+    width: 50%;
+  }
+
+  .btn-back {
+    width: 20%;
+    height: 70px;
+    margin-top: 30px;
+  }
+
+  .scacchiera {
+    grid-template-rows: repeat(8, 70px);
+    grid-template-columns: repeat(8, 70px);
+  }
+
+  .pezzo-nero {
+    width: 70px;
+  }
+  .pezzo-bianco {
+    width: 70px;
+  }
+
+  .possibile-mossa {
+    position: relative;
+    top: 12px;
+    left: 12px;
+  }
+  .mangio-pezzo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container-log {
+    max-width: 1024px;
+  }
+  .header-logged {
+    padding-top: 10px;
+  }
+  .btn-game {
+    width: auto;
+    margin-top: 30px;
+  }
+  .card-create {
+    width: 55%;
+  }
+  .btn-back {
+    width: 25%;
+  }
+  .scacchiera {
+    grid-template-rows: repeat(8, 65px);
+    grid-template-columns: repeat(8, 65px);
+  }
+  .pezzo-nero {
+    width: 65px;
+  }
+  .pezzo-bianco {
+    width: 65px;
+  }
+
+  .possibile-mossa {
+    position: relative;
+    top: 9px;
+    left: 9px;
+  }
+  .mangio-pezzo {
+    position: absolute;
+    top: 9px;
+    left: 9px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container-log {
+    max-width: 768px;
+    flex-flow: wrap;
+  }
+  .header-logged {
+    padding-top: 10px;
+  }
+  .btn-game {
+    width: auto;
+    margin-top: 30px;
+  }
+  .card-create {
+    width: 60%;
+  }
+  .btn-back {
+    width: 30%;
+  }
+
+  .d-flexd {
+    flex-direction: column;
+  }
+
+  .card-scacchiera:nth-child(1) {
+    order: 2;
+  }
+
+  .card-c {
+    min-width: 40%;
+  }
+
+  .card-h {
+    min-width: 40%;
+    height: 700px;
+  }
+
+  .scacchiera {
+    grid-template-rows: repeat(8, 70px);
+    grid-template-columns: repeat(8, 70px);
+  }
+
+  .pezzo-nero {
+    width: 70px;
+  }
+  .pezzo-bianco {
+    width: 70px;
+  }
+
+  .possibile-mossa {
+    position: relative;
+    top: 12px;
+    left: 12px;
+  }
+  .mangio-pezzo {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+  }
+  .btn-modal {
+    width: 45%;
+  }
+  .btn-match {
+    width: 30%;
+  }
+  #captured {
+    display: none;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container-log {
+    max-width: 640px;
+    flex-flow: wrap;
+  }
+  .header-logged {
+    padding-top: 10px;
+  }
+  .btn-game {
+    width: auto;
+    margin-top: 30px;
+  }
+  .card-create {
+    width: 65%;
+  }
+  .btn-back {
+    width: 35%;
+  }
+  .card-c {
+    min-width: 60%;
+  }
+
+  .card-h {
+    height: 700px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container-log {
+    max-width: 475px;
+    flex-flow: wrap;
+  }
+
+  .header-logged {
+    padding-top: 10px;
+  }
+  .btn-game {
+    width: auto;
+    margin-top: 30px;
+  }
+  .card-create {
+    width: 70%;
+  }
+  .btn-back {
+    width: 40%;
+  }
+
+  .card-c {
+    min-width: 40%;
+  }
+
+  .card-h {
+    min-width: 40%;
+    height: 700px;
+  }
+
+  .scacchiera {
+    grid-template-rows: repeat(8, 50px);
+    grid-template-columns: repeat(8, 50px);
+    border-width: 20px;
+  }
+
+  .pezzo-nero {
+    width: 50px;
+  }
+  .pezzo-bianco {
+    width: 50px;
+  }
+
+  .possibile-mossa {
+    position: relative;
+    top: 2px;
+    left: 2px;
+  }
+  .mangio-pezzo {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container-log {
+    width: 470px;
+    flex-flow: wrap;
+  }
+
+  .header-logged {
+    padding-top: 10px;
+  }
+  .btn-game {
+    width: auto;
+    margin-top: 30px;
+  }
+  .card-create {
+    width: 75%;
+  }
+  .btn-back {
+    width: 45%;
+  }
+
+  .card-c {
+    min-width: 70%;
+  }
+  .card-h {
+    min-width: 70%;
+    height: 700px;
+  }
+
+  .scacchiera {
+    grid-template-rows: repeat(8, 40px);
+    grid-template-columns: repeat(8, 40px);
+    border-width: 15px;
+  }
+
+  .pezzo-nero {
+    width: 40px;
+  }
+  .pezzo-bianco {
+    width: 40px;
+  }
+
+  .possibile-mossa {
+    position: relative;
+    top: 6px;
+    left: 8px;
+    width: 24px;
+  }
+  .mangio-pezzo {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    width: 24px;
+  }
+}
+
+@media (max-width: 375px) {
+  .reg-height {
+    height: auto;
+  }
+}
